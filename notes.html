@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link
+      rel="icon"
+      href="https://png.pngtree.com/element_our/png/20181208/notes-icon-png_265236.jpg"
+    />
+    <link rel="stylesheet" href="notes.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Header Position-->
+    <header>
+      <h1>📝Notes</h1>
+    </header>
+    <!--Book Title,Author,Content-->
+    <div class="containers">
+      <div class="container">
+        <h1>Notes Title</h1>
+        <h3>Notes Date</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+          quae cum ducimus rerum molestiae ipsam eligendi saepe odio repellat
+          iste numquam perferendis architecto optio atque, necessitatibus,
+          dignissimos porro? Dignissimos necessitatibus reprehenderit voluptatum
+          illo repellendus obcaecati, cupiditate dolore quod laborum mollitia
+          quibusdam, illum temporibus. Dolor rem voluptatum culpa iste sequi
+          nesciunt.
+        </p>
+        <button onclick="deletebook(event)">Delete</button>
+      </div>
+    </div>
+    <!--Popup Button-->
+    <div class="popup">
+      <button id="popupbtn">+</button>
+    </div>
+    <!--Black Screen-->
+    <div class="blackscreen"></div>
+    <!--Add Your Own Book-->
+    <div class="ownbook">
+      <tr>
+        <td>Notes Title</td>
+        <td><input type="text" id="booktitle" /></td>
+      </tr>
+      <tr>
+        <td>Schedule</td>
+        <td><input type="date" id="bookauthor" /></td>
+      </tr>
+      <tr>
+        <td>Remarks</td>
+        <td><textarea name="" id="content"></textarea></td>
+      </tr>
+      <tr>
+        <td><button id="addbook">Add</button></td>
+        <td><button id="closepopup">Close</button></td>
+      </tr>
+    </div>
+    <script src="notes.js"></script>
+  </body>
+</html>
 
